@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Signup to shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+ /* <------------------------------Header--------------------------------------------> */
+     #header>div:nth-child(1){
+        background-color: #e42529;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 25px;
+        padding: 5px 0px 5px 0px;
+        align-items: center;
+     }
+     #header img{
+        width: 17px;
+     }
+     #header a {
+     border-right: 1px solid white;
+     color: white;
+     background-color: transparent;
+     text-decoration: none;
+     padding: 0px 10px 0px 10px;
+     }
+/* <------------------------------NavBar--------------------------------------------> */
+     nav{
+        background-color: #e42529;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+     }
+     nav>div:nth-child(2){
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        height: 35px;
+     }
+     nav input{
+        width: 90%;
+        height: 35px;
+        border: 0px;
+        border-radius: 10px;
+        outline: 0px;
+        padding: 5px 10px;
+     }
+     #header>div>a:last-child{
+            border-right: 0px;
+        }
+        #header>div>a:first-child{
+            border-right: 0px;
+        }
+        #header>nav a:last-child{
+            border-right: 0px;
+        }
+        #header>nav>img{
+        width: 100px;
+        height: 60px;
+        padding-left: 40px;
+     }
+     .fa{
+            color: rgb(122, 122, 122);
+        }
+/* <------------------------------DropdownMenu--------------------------------------------> */
+     .dropdownMenu {
+            background-color: #003380;
+            text-align: center;
+        }
+
+        .dropdownMenu ul {
+            display:flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .dropdownMenu ul li {
+            padding: 10px 0px;
+            width: 100%;
+        }
+
+        .dropdownMenu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .dropdownMenu>ul>li:hover {
+            background-color:  #e42529;
+        }
+        .subMenu1 {
+            display: none;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 {
+            display: block;
+            position: absolute;
+            background-color: #003380;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul li {
+            width: 750px;
+            padding: 10px;
+            background-color: transparent;
+            text-align: left;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdownMenu>ul>li:hover .subMenu1 ul li a:hover {
+            background-color:  #003380;
+            padding: 10% 72% 10% 5%;
+            border-radius: 2px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .arrow {
+            border: solid rgb(252, 251, 251);
+            border-width: 0 1.5px 1.5px 0;
+            display: inline-block;
+            padding: 3px;
+            margin: 0px 0px 2px 3px;
+        }
+ /* <------------------------------LoginForm--------------------------------------------> */
+        #loginform{
+            width: 30%;
+            margin: 40px 70px 0px 870px;
+        }
+        #loginform>div{ 
+            background-color:white;
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            margin: 3px;
+        }
+        #loginform>form{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        }
+        #loginform>form>input:first-child{
+            width: 80%;
+            margin: 30px 30px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid rgb(235, 234, 232);
+            margin-bottom: 20px;
+        }
+        #loginform>form>input:last-child{
+            width: 86%;
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+            background-color: #e42529;
+            color: white;
+            border: 0px;
+            margin: 30px 30px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .arrow {
+            border: solid rgb(252, 251, 251);
+            border-width: 0 1.5px 1.5px 0;
+            display: inline-block;
+            padding: 3px;
+            margin: 0px 0px 2px 3px;
+        }
+/* <--------------------------------Footer----------------------------------> */
+#footer{
+        width: 100%;
+        background-color: #003380;
+        color: white;
+        margin-top: 25px;
+    }
+     #footer>div:nth-child(1){
+        display: flex;
+        width: 100%;
+        background-color: #003380;
+        color: white;
+        padding: 30px 0px;
+        justify-content: space-evenly;
+     }
+     #footer a{
+        text-decoration: none;
+        color: white;
+     }
+     #footer>div:nth-child(2){
+        padding: 20px 120px;
+        display: flex;
+        gap: 200px;
+     }
+     #footer>div>div:nth-child(1) img{
+        width: 20px;
+     }
+     #footer>div>div:nth-child(2) img{
+        width: 120px;
+     }
+     #footer>div:nth-child(3){
+        background-color: rgb(21, 31, 91);
+        width:fit-content;
+        text-align: center;
+        padding: 10px 40px;
+        font-size: 15px;
+        line-height: 17px;
+     }
+     #footer>div:nth-child(3) h3{
+        text-decoration: underline;
+        margin-bottom: 15px;
+     }
+     #footer>div:nth-child(3)>div{
+        margin-top: 20px;
+     }
+
+    </style>
+</head>
+<body>
+    <body>
+        <div id="header">
+            <div>
+                <a href="">OUR BRAND PROMISE</a>
+                <a href="">EASY RETURN</a>
+                <a href="">NEXT DAY DELIVERY</a>
+                <a href="">SERVICE GUARANTEE</a>
+                <a href="">UNMATCHED NETWORK</a>
+                <a href=""><img src="./image/baseline_place_white_24dp.png" alt="">Find a store</a>
+                <a href="">Contact Us</a>
+            </div>
+            <nav>
+                <img src="./image/Ele-stop.gif" alt="Error">
+                <div><input type="search" placeholder="Find your favourite products">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+                <div><a href=""><img src="./image/baseline_shopping_cart_white_24dp.png" alt="Error">Cart</a><a id="login" href=""><img src="./image/baseline_person_white_24dp.png" alt="Error"> Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="dropdownMenu">
+            <ul>
+                <li class="active">
+                   <p><a href="#">MOBILES & TABLETS<i class="arrow down"></i></a></p> 
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">TELEVISIONS<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                            <li><a href="#">Four</a></li>
+                            <li><a href="#">Five</a></li>
+    
+                        </ul>
+                    </div></li>
+                <li><a href="#">AUDIO<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">HOME APPLIANCES<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">COMPUTERS<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">CAMERAS<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">KITCHEN APPLIANCES<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#">PERSONAL CARE<i class="arrow down"></i></a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                        </ul>
+                    </div></li>
+                    <li><a href="#">ACCESSORIES<i class="arrow down"></i></a>
+                        <div class="subMenu1">
+                            <ul>
+                                <li><a href="#">One</a></li>
+                                <li><a href="#">Two</a></li>
+                                <li><a href="#">Three</a></li>
+                            </ul>
+                        </div></li>
+            </ul>
+        </div>
+        <div id="loginform">
+            <div>Login / Register</div>
+            <form>
+                <input type="number" placeholder="Enter Mobile Number">
+                <br>
+                <input type="submit" value="PROCEED">
+            </form>
+        </div>
+        <div id="footer">
+            <div>
+              <div>
+                  <h3>PRODUCT CATEGORIES</h3>
+                  <p><a href="#">Smartphones</a></p>
+                  <p><a href="#">Laptops</a></p>
+                  <p><a href="#">DSLR Cameras</a></p>
+                  <p><a href="#">Televisions</a></p>
+                  <p><a href="#">Air Conditioners</a></p>
+                  <p><a href="#">Refrigerators</a></p>
+                  <p><a href="#">Kitchen Appliances</a></p>
+                  <p><a href="#">Accessories</a></p>
+                  <p><a href="#">Personal Care & Grooming</a></p>
+                 </div>
+                 <div>
+                  <h3>SITE INFO</h3>
+                  <p><a href="#">About Reliance Digital</a></p>
+                  <p><a href="#">resQ Services</a></p>
+                  <p><a href="#">Site Map</a></p>
+                  <p><a href="#">Gift Cards</a></p>
+                  <p><a href="#">Corporate Enquires</a></p>
+                  <p><a href="#">Contact US</a></p>
+                 </div>
+                 <div>
+                  <h3>RESOUCES CENTER</h3>
+                  <p><a href="#">Product Reviews</a></p>
+                  <p><a href="#">Buying Guides</a></p>
+                  <p><a href="#">How Tos</a></p>
+                  <p><a href="#">Featured Stories</a></p>
+                  <p><a href="#">Events & Happenings</a></p>
+                 </div>
+                 <div>
+                  <h3>POLICIES</h3>
+                  <p><a href="#">Terms of Use</a></p>
+                  <p><a href="#">FAQs</a></p>
+                  <p><a href="#">Cancellation and Return Policy</a></p>
+                  <p><a href="#">Pricing and Payment Policy</a></p>
+                  <p><a href="#">Shipping and Delivery Policy</a></p>
+                  <p><a href="#">Privacy Policy</a></p>
+                  <p><a href="#">E-waste Recycling Policy</a></p>
+                  <p><a href="#">EMI and Additional Cashback T&C</a></p>
+                  <p><a href="#">RelianceOne Loyality Program T&C</a></p>
+                  <p><a href="#">Caution Notice</a></p>
+                 </div>
+            </div>  
+            <div>
+              <div>
+                  <h3>FOLLOW US</h3>
+                  <a href="https://www.facebook.com/reliancedigital/" target="_blank"><img src="./image/square-facebook.svg" alt="Error"> </a>
+                  <a href="https://twitter.com/reliancedigital" target="_blank"><img src="./image/square-twitter.svg" alt="Error"></a>
+                  <a href="https://www.youtube.com/reliancedigital"><img src="./image/square-youtube.svg" alt="Error"></a>
+              </div>
+              <div>
+                  <h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
+                  <a href="https://play.google.com/store/apps/details?id=in.digital.reliance" target="_blank"><img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt="Error"></a>
+                  <a href="https://apps.apple.com/in/app/reliance-digital-shopping-app/id1513379107" target="_blank"><img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="Error"></a>
+              </div>
+             </div>
+             <div>
+              <h3>Disclaimer</h3>
+              <p>Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.</p>
+              <div>
+                  <p> © 2022 Ele-Stop. All Rights Reserved.</p>
+                 </div>
+             </div>
+          </div>
+    </body>
+</body>
+</html>
