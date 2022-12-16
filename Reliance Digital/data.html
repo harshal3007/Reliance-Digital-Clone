@@ -4,121 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login or Signup to shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
- /* <------------------------------Header--------------------------------------------> */
-     #header>div:nth-child(1){
-        background-color: #e42529;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 25px;
-        padding: 5px 0px 5px 0px;
-        align-items: center;
-     }
-     #header img{
-        width: 17px;
-     }
-     #header a {
-     border-right: 1px solid white;
-     color: white;
-     background-color: transparent;
-     text-decoration: none;
-     padding: 0px 10px 0px 10px;
-     }
+    <title>Shop Watches</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+/* <------------------------------Header--------------------------------------------> */
+ #header>div:nth-child(1){
+    background-color: #e42529;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    padding: 5px 0px 5px 0px;
+    align-items: center;
+ }
+ #header img{
+    width: 17px;
+ }
+ #header a {
+ border-right: 1px solid white;
+ color: white;
+ background-color: transparent;
+ text-decoration: none;
+ padding: 0px 10px 0px 10px;
+ }
 /* <------------------------------NavBar--------------------------------------------> */
-     nav{
-        background-color: #e42529;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 70px;
-        align-items: center;
-     }
-     nav>div:nth-child(2){
-        width: 500px;
-        background-color: white;
-        border-radius: 10px;
-        height: 35px;
-     }
-     nav input{
-        width: 90%;
-        height: 35px;
-        border: 0px;
-        border-radius: 10px;
-        outline: 0px;
-        padding: 5px 10px;
-     }
-     #header>div>a:last-child{
-            border-right: 0px;
-        }
-        #header>div>a:first-child{
-            border-right: 0px;
-        }
-        #header>nav a:last-child{
-            border-right: 0px;
-        }
-        #header>nav>img{
-        width: 100px;
-        height: 70px;
-        padding-left: 40px;
-     }
-     .fa{
-            color: rgb(122, 122, 122);
-        }
+ nav{
+    background-color: #e42529;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+ }
+ nav>div:nth-child(2){
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    height: 35px;
+ }
+ nav input{
+    width: 90%;
+    height: 35px;
+    border: 0px;
+    border-radius: 10px;
+    outline: 0px;
+    padding: 5px 10px;
+ }
+ #header>div>a:last-child{
+        border-right: 0px;
+    }
+    #header>div>a:first-child{
+        border-right: 0px;
+    }
+    #header>nav a:last-child{
+        border-right: 0px;
+    }
+    #header>nav>img{
+    width: 100px;
+    height: 70px;
+    padding-left: 40px;
+ }
+ .fa{
+        color: rgb(122, 122, 122);
+    }
 /* <------------------------------DropdownMenu--------------------------------------------> */
-     .dropdownMenu {
-            background-color: #003380;
-            text-align: center;
-        }
+ .dropdownMenu {
+        background-color: #003380;
+        text-align: center;
+    }
 
-        .dropdownMenu ul {
-            display:flex;
-            list-style: none;
-            width: 100%;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+    .dropdownMenu ul {
+        display:flex;
+        list-style: none;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-        .dropdownMenu ul li {
-            padding: 10px 0px;
-            width: 100%;
-        }
+    .dropdownMenu ul li {
+        padding: 10px 0px;
+        width: 100%;
+    }
 
-        .dropdownMenu ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-        }
+    .dropdownMenu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
-        .dropdownMenu>ul>li:hover {
-            background-color:  #e42529;
-        }
-        .subMenu1 {
-            display: none;
-        }
+    .dropdownMenu>ul>li:hover {
+        background-color:  #e42529;
+    }
+    .subMenu1 {
+        display: none;
+    }
 
-        .dropdownMenu>ul>li:hover .subMenu1 {
-            display: block;
-            position: absolute;
-            background-color: #003380;
-            margin: 15px;
-            
-        }
+    .dropdownMenu>ul>li:hover .subMenu1 {
+        display: block;
+        position: absolute;
+        background-color: #003380;
+        margin-top: 15px;
+        margin-left: -15px;
+    }
 
-        .dropdownMenu>ul>li:hover .subMenu1 ul {
-            display: block;
-            margin: 10px;
-        }
+    .dropdownMenu>ul>li:hover .subMenu1 ul {
+        display: block;
+        margin: 10px;
+    }
 
-        .dropdownMenu>ul>li:hover .subMenu1 ul li {
+    .dropdownMenu>ul>li:hover .subMenu1 ul li {
             width: 200px;
             padding: 0px 10px 0px 30px; 
             background-color: transparent;
@@ -126,121 +126,99 @@
             line-height: 30px;
         }
 
-        .dropdownMenu>ul>li:hover .subMenu1 ul li:last-child {
-            border-bottom: none;
-        }
+    .dropdownMenu>ul>li:hover .subMenu1 ul li:last-child {
+        border-bottom: none;
+    }
 
-        .dropdownMenu>ul>li:hover .subMenu1 ul li a:hover {
+    .dropdownMenu>ul>li:hover .subMenu1 ul li a:hover {
             background-color: #042e6e;
             border-radius: 2px;
         }
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-        .arrow {
-            border: solid rgb(252, 251, 251);
-            border-width: 0 1.5px 1.5px 0;
-            display: inline-block;
-            padding: 3px;
-            margin: 0px 0px 2px 3px;
-        }
- /* <------------------------------LoginForm--------------------------------------------> */
-        #loginform{
-            width: 30%;
-            margin: 40px 70px 100px 870px;
-        }
-        #loginform>div{ 
-            background-color:white;
-            padding: 10px;
-            font-size: large;
-            font-weight: bold;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            margin: 3px;
-        }
-        #loginform>form{
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-        }
-        #loginform>form>input:first-child{
-            width: 80%;
-            margin: 30px 30px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid rgb(235, 234, 232);
-            margin-bottom: 20px;
-        }
-        #loginform>form>input:last-child{
-            width: 86%;
-            padding: 10px;
-            text-align: center;
-            font-size: large;
-            background-color: #e42529;
-            color: white;
-            border: 0px;
-            margin: 30px 30px;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-        .arrow {
-            border: solid rgb(252, 251, 251);
-            border-width: 0 1.5px 1.5px 0;
-            display: inline-block;
-            padding: 3px;
-            margin: 0px 0px 2px 3px;
-        }
+        
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .arrow {
+        border: solid rgb(252, 251, 251);
+        border-width: 0 1.5px 1.5px 0;
+        display: inline-block;
+        padding: 3px;
+        margin: 0px 0px 2px 3px;
+    }
 /* <--------------------------------Footer----------------------------------> */
 #footer{
-        width: 100%;
-        background-color: #003380;
-        color: white;
-        margin-top: 25px;
-    }
-     #footer>div:nth-child(1){
-        display: flex;
-        width: 100%;
-        background-color: #003380;
-        color: white;
-        padding: 30px 0px;
-        justify-content: space-evenly;
-     }
-     #footer a{
-        text-decoration: none;
-        color: white;
-     }
-     #footer>div:nth-child(2){
-        padding: 20px 120px;
-        display: flex;
-        gap: 200px;
-     }
-     #footer>div>div:nth-child(1) img{
-        width: 20px;
-     }
-     #footer>div>div:nth-child(2) img{
-        width: 120px;
-     }
-     #footer>div:nth-child(3){
-        background-color: rgb(21, 31, 91);
-        width:fit-content;
-        text-align: center;
-        padding: 10px 40px;
-        font-size: 15px;
-        line-height: 17px;
-     }
-     #footer>div:nth-child(3) h3{
-        text-decoration: underline;
-        margin-bottom: 15px;
-     }
-     #footer>div:nth-child(3)>div{
+    width: 100%;
+    background-color: #003380;
+    color: white;
+    margin-top: 25px;
+    line-height: 27px;
+}
+ #footer>div:nth-child(1){
+    display: flex;
+    width: 100%;
+    background-color: #003380;
+    color: white;
+    padding: 30px 0px;
+    justify-content: space-evenly;
+ }
+ #footer a{
+    text-decoration: none;
+    color: white;
+ }
+ #footer>div:nth-child(2){
+    padding: 20px 120px;
+    display: flex;
+    gap: 200px;
+ }
+ #footer>div>div:nth-child(1) img{
+    width: 20px;
+ }
+ #footer>div>div:nth-child(2) img{
+    width: 120px;
+ }
+ #footer>div:nth-child(3){
+    background-color: rgb(21, 31, 91);
+    width:fit-content;
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 15px;
+    line-height: 17px;
+ }
+ #footer>div:nth-child(3) h3{
+    text-decoration: underline;
+    margin-bottom: 15px;
+ }
+ #footer>div:nth-child(3)>div{
+    margin-top: 20px;
+ }
+ /* <------------------------------Cont----------------------------> */
+ #cont{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 80%;
+        margin: auto;
         margin-top: 20px;
-     }
+    }
+    #cont div{
+        width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    #cont img{
+        width: 100%;
+    }
+    #cont button{
+        background-color:  #e42529;
+        color: white;
+        border: 0px;
+        border-radius: 4px;
+        padding: 3px;
+    }
 
-    </style>
-</head>
+</style>
 <body>
     <div id="header">
         <div>
@@ -257,7 +235,8 @@
             <div><input type="search" placeholder="Find your favourite products">
                 <a href="#"><i class="fa fa-search"></i></a>
             </div>
-            <div><a id="cartPage" href="./cart.html"><img src="./image/baseline_shopping_cart_white_24dp.png" alt="Error">Cart</a><a id="login" href=""><img src="./image/baseline_person_white_24dp.png" alt="Error"> Login</a>
+            <div><a id="cartpage"href=" ./cart.html "><img src="./image/baseline_shopping_cart_white_24dp.png" alt="Error">Cart</a>
+                <a id="login" href="./loginPage.html"><img src="./image/baseline_person_white_24dp.png" alt="Error"> Login</a>
             </div>
         </nav>
     </div>
@@ -359,14 +338,7 @@
                     </div></li>
         </ul>
     </div>
-    <div id="loginform">
-        <div>Login / Register</div>
-        <form>
-            <input type="number" placeholder="Enter Mobile Number">
-            <br>
-            <input type="submit" value="PROCEED">
-        </form>
-    </div>
+    <div id="cont"></div>
     <div id="footer">
         <div>
           <div>
@@ -435,13 +407,67 @@
       </div>
 </body>
 <script>
-    let cart = document.getElementById("cartpage")
-    cart.addEventListener("click",()=>{
-        window.location.href="cart.html"
+     let login = document.getElementById("login")
+    login.addEventListener("click",()=>{
+        window.location.href="loginPage.html"
     })
     let logo = document.getElementById("logo")
     logo.addEventListener("click",()=>{
         window.location.href="index.html"
     })
+    let cart = document.getElementById("cartpage")
+    cart.addEventListener("click",()=>{
+        window.location.href="cart.html"
+    })
+    let cont = document.getElementById("cont")
+    
+     fetch("https://6398ae5129930e2bb3beabdb.mockapi.io/Electronics")
+    .then ((res) =>{
+        return res.json()
+    })
+    .then ((actualData) => {
+        showData(actualData)
+        // console.log(actualData)
+
+    })
+    .catch((err) =>{
+        showData(err)
+    })
+
+    function showData(data){
+       data.forEach((element) => {
+            let card = document.createElement("div")
+            let img = document.createElement("img")
+            img.setAttribute("src",element.image)
+            let name = document.createElement("h4")
+            name.innerText= element.name;
+            let price = document.createElement("p")
+            price.innerText = element.price;
+            let rating = document.createElement("p")
+            rating.innerText = element.rating
+            let btn = document.createElement("button")
+            btn.innerText = "Add to cart"
+            btn.addEventListener("click",() =>{
+                let cartData = JSON.parse(localStorage.getItem("cart"))
+                if (cartData === null) cartData = [];
+                let isAlreadyinCard = false
+                for (let i=0; i<cartData.length; i++){
+                    if (cartData [i].id === element.id){
+                        isAlreadyinCard = true
+                        break; 
+                    }
+                }
+                if (isAlreadyinCard === true){
+                    alert("Product is already in the cart")
+                }else{
+                    cartData.push(element)
+                    localStorage.setItem("cart", JSON.stringify(cartData))
+                    alert("Product added to Cart")
+                }
+            })
+            card.append(img,name,price,rating,btn)
+            cont.append(card)
+        });
+    }
 </script>
 </html>

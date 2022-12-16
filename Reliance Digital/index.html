@@ -23,6 +23,7 @@
         display: flex;
         justify-content: right;
         height: 25px;
+        font-weight:600;
         padding: 5px 0px 5px 0px;
         align-items: center;
      }
@@ -42,12 +43,13 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        height: 70px;
+        height: 80px;
         align-items: center;
+        font-weight:600;
      }
      #header>nav>img{
         width: 100px;
-        height: 60px;
+        height: 70px;
         padding-left: 40px;
      }
      nav>div:nth-child(2){
@@ -123,10 +125,11 @@
         }
 
         .dropdownMenu>ul>li:hover .subMenu1 ul li {
-            width: 750px;
-            padding: 10px;
+            width: 200px;
+            padding: 0px 10px 0px 30px; 
             background-color: transparent;
             text-align: left;
+            line-height: 30px;
         }
 
         .dropdownMenu>ul>li:hover .subMenu1 ul li:last-child {
@@ -134,8 +137,7 @@
         }
 
         .dropdownMenu>ul>li:hover .subMenu1 ul li a:hover {
-            background-color:  #003380;
-            padding: 10% 72% 10% 5%;
+            background-color: #042e6e;
             border-radius: 2px;
         }
         .down {
@@ -181,6 +183,7 @@
         width: 100%;
         background-color: #003380;
         color: white;
+        line-height: 27px;
     }
      #footer>div:nth-child(1){
         display: flex;
@@ -286,6 +289,20 @@
     .resQ img{
         width: 80%;
     }
+    /* <----------------------------Deals-------------------------------------> */
+      #deals{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 97%;
+        margin: auto;
+      }
+      #deals div{
+        width: 95%;
+        margin-bottom: 50px ;
+      }
+      #deals img{
+        width: 100%;
+      }
     /* <----------------Button---------------------> */
     #btn{
        background-color: #003380;
@@ -303,11 +320,12 @@
 <body>
     <div id="header">
         <div>
-            <a href="#"><img src="./image/baseline_place_white_24dp.png" alt="Error">Find a store</a><a 
-              href="#">Buying Guides</a><a href="#">Contact Us</a>
+            <a href="https://www.reliancedigital.in/locateus"><img src="./image/baseline_place_white_24dp.png" alt="Error">Find a store</a>
+            <a href="https://www.reliancedigital.in/solutionbox/">Buying Guides</a>
+              <a href="https://www.reliancedigital.in/content/contactus" target="_blank">Contact Us</a>
         </div>
         <nav>
-            <img src="./image/Ele-stop.gif" alt="Error">
+            <img id="logo" src="./image/Ele-stop.gif" alt="Error">
             <div><input type="search" placeholder="Find your favourite products">
                 <a href="#"><i class="favv fa-search"></i></a></div>
             <div><a href="#">Select your PIN code</a>
@@ -322,77 +340,94 @@
                <p><a href="#">MOBILES & TABLETS<i class="arrow down"></i></a></p> 
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Wearable Technology</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Tablet Accessories</a></li>
+                        <li><a href="#">Mobile Accessories</a></li>
+                        <li><a href="#">Memory Cart</a></li>
                     </ul>
                 </div>
             </li>
             <li><a href="#">TELEVISIONS<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                        <li><a href="#">Four</a></li>
-                        <li><a href="#">Five</a></li>
+                        <li><a href="#">LED TVS</a></li>
+                        <li><a href="#">Smart TVs</a></li>
+                        <li><a href="#">32 Inch TVs</a></li>
+                        <li><a href="#">42 Inch TVs</a></li>
+                        <li><a href="#">55 Inch TVs</a></li>
 
                     </ul>
                 </div></li>
             <li><a href="#">AUDIO<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">True Wireless</a></li>
+                        <li><a href="#">Bluetooth NeckBand</a></li>
+                        <li><a href="#">Ear Buds</a></li>
+                        <li><a href="#">On Ear Headphones</a></li>
+                        <li><a href="#">Wired Earphones</a></li>
                     </ul>
                 </div></li>
             <li><a href="#">HOME APPLIANCES<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Air Conditioners</a></li>
+                        <li><a href="#">Air Coolers</a></li>
+                        <li><a href="#">Air Purifiers</a></li>
+                        <li><a href="#">Washing Machines</a></li>
+                        <li><a href="#">Refrigerators</a></li>
                     </ul>
                 </div></li>
             <li><a href="#">COMPUTERS<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Computer Monitors</a></li>
+                        <li><a href="#">Desktops & All-In-Ones</a></li>
+                        <li><a href="#">Bluetooth & WiFi Speakers</a></li>
+                        <li><a href="#">Internet Connectivity Devices</a></li>
                     </ul>
                 </div></li>
             <li><a href="#">CAMERAS<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">DSLR Cameras</a></li>
+                        <li><a href="#">Mirrorless Cameras</a></li>
+                        <li><a href="#">Point & Shoot Cameras</a></li>
+                        <li><a href="#">ProSumer Cameras</a></li>
+                        <li><a href="#">Action Cameras</a></li>
                     </ul>
                 </div></li>
             <li><a href="#">KITCHEN APPLIANCES<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Microwave Ovens</a></li>
+                        <li><a href="#">Air Fryers</a></li>
+                        <li><a href="#">Electric Kettles</a></li>
+                        <li><a href="#">Food Processors</a></li>
+                        <li><a href="#">Popup Toasters</a></li>
                     </ul>
                 </div></li>
             <li><a href="#">PERSONAL CARE<i class="arrow down"></i></a>
                 <div class="subMenu1">
                     <ul>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Shavers & Trimmers</a></li>
+                        <li><a href="#">Epilators</a></li>
+                        <li><a href="#">Hair Dryers & Stylers</a></li>
+                        <li><a href="#">Weighing Scales</a></li>
+                        <li><a href="#">Irons</a></li>
                     </ul>
                 </div></li>
                 <li><a href="#">ACCESSORIES<i class="arrow down"></i></a>
                     <div class="subMenu1">
                         <ul>
-                            <li><a href="#">One</a></li>
-                            <li><a href="#">Two</a></li>
-                            <li><a href="#">Three</a></li>
+                            <li><a href="#">Bags, Cases & Sleeves</a></li>
+                            <li><a href="#">Smart Devices</a></li>
+                            <li><a href="#">Batteries</a></li>
+                            <li><a href="#">Chargers & Adapters</a></li>
+                            <li><a href="#">Bluetooth & WiFi Speakers</a></li>
                         </ul>
                     </div></li>
         </ul>
@@ -456,7 +491,7 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
-    <h3 class="heading">PRICE DROP ON APPLE SMARTWATCHES <a href="https://www.reliancedigital.in/search?q=:price-desc:productTags:apple-watches:availability:Exclude%20out%20of%20Stock&page=0">VEIW ALL</a></h3>
+    <h3 class="heading">PRICE DROP ON APPLE SMARTWATCHES <a href="./data.html">VEIW ALL</a></h3>
     <div class="slider2">
         <div>
             <img src="https://www.reliancedigital.in/medias/Apple-Watches-Producst-Carousel-29-11-2022.jpg?context=bWFzdGVyfGltYWdlc3w1NTYyOHxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDQyLzk5MjgzNzA5Nzg4NDYuanBnfDg5OTE2MzFkOTU2YmI1ODhjOTZmODQ2YzkyNjUzNjYwZTYxZGQ2NGY4OTdhNmU3YjBkZGZmZGI3MzM2OWQwNzQ" alt="Error">
@@ -669,7 +704,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://www.reliancedigital.in/medias/Mi-4A-Horizon-Edition-Television-492166368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDk4Lzk3OTA4NzQ3MTQxNDIuanBnfDhjNDk4M2M1MTM1YTViZmFkMTY1NGM1ZmU4ZjFiODNiOGQ2NTMyYzUxYjg0NWJmYWE4MjIzODg4YmEzMWM5ZDY"alt="Error">
+                        <img src="https://www.reliancedigital.in/medias/Sansui-JSW32CSHD-Television-493179126-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzMxMnxpbWFnZS9qcGVnfGltYWdlcy9oYmMvaGRhLzk4OTI2OTQ1NTY3MDIuanBnfDNiNGIzMzY5MzI1NjE2YzA0MTlhMjNmY2JkNGE1MjBhMDFjZWI0ODBlMGRmZjU3NjIwMzI0YTJlNzlmMWI4MTQ"alt="Error">
                         <div>
                             <a href="#">Sansui 80 cm (32 inch) HD Rady Smart TV</a>
                         <div><p>Deal Price:</p><h4>₹9,999.00</h4></div>
@@ -716,7 +751,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="https://www.reliancedigital.in/medias/TCL-55C725-LED-TV-493179298-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4ODM0OHxpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGM5Lzk5MDc3NjczNzc5NTAuanBnfGRjNTA4YzUwYTllZWU2MzZlNjExMzMwNDIxOWFkMTk0ZGU3OWE1Njc3ZGNlZDM1MDczZGMzYWUwM2I0NDc0MzE"alt="Error">
+                        <img src="https://www.reliancedigital.in/medias/Tcl-32S5205-Television-493285675-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjM4OHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaGUzLzk4NzcwNTI0ODk3NTguanBnfDM1ZmZlN2JjMzFiMWViNDM4ZDk5N2ZiZGIzMTJkMDE4YjljNDg2YmM4YTRmOTIzMWE0MWM0OGU5NDhlMWViZjQ"alt="Error">
                         <div>
                             <a href="#">TLC 139.7 cm (55 inch) HD Ready Smart TV</a>
                         <div><p>Deal Price:</p><h4>₹40,990.00</h4></div>
@@ -738,6 +773,18 @@
             <div class="swiper-button-next"></div>
         </div>
     </div>
+    <h3 class="heading">GREAT DEALS ON ELECTRONICS</h3>
+    <div id="deals">
+        <div><img src="https://www.reliancedigital.in/medias/Smartwatches-Small-Banners-01.jpg?context=bWFzdGVyfGltYWdlc3w0NDA0MnxpbWFnZS9qcGVnfGltYWdlcy9oNTAvaGRiLzk5MjgzNzA5MTMzMTAuanBnfGYwOWU2ZjQ3Y2Y0OWI2NmVhZGVkYWM2M2ZiMzQ4YTlhODRkZDY4ODZmODA1OGQyZWNiYWVhODNmNWM2YWMwMmY" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/Realme-Smart-TV-Great-Deals-Banner-13-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w3NzY3MHxpbWFnZS9qcGVnfGltYWdlcy9oNzUvaDg2Lzk5MzExODY3NjU4NTQuanBnfDA5YzNlMTkwNmM0ZWI3ZGJlYjI5Y2E0ZmQ5M2M5YjNkZmZjZmVlMjBmOGU1ZGIwNDY3NjFhNTcwMWM4ZmFlOWI" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/Printers-Small-Banners-01-1-.jpg?context=bWFzdGVyfGltYWdlc3w0MDAwNHxpbWFnZS9qcGVnfGltYWdlcy9oNGYvaGQxLzk5Mjg3MzAzNDU1MDIuanBnfGMyNTg3NWQyZWRmMGU2M2EzZmEwM2U2MWNlMTA3ZWQzYjk4MmRhM2EzYjY0N2FiZGM4OGFlYWQ2NjBlZjE4YWE" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/Washing-Machines-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NDcwMHxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDUwLzk5MTM3Nzc3MTcyNzguanBnfGMyNWJhNDNiMTFkMjE4YmQ2OGRiMzdkMGIxNmZmZDhiYzViMTBjY2I1ZDllYzAyMWFjN2FlZTU1ZGVmMDk4MmU" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/Smart-Home-Products-Great-Deals-Banner-22-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wzOTAxM3xpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDMxLzk5MzExOTE5NDMxOTguanBnfDhiY2ZkOWE5YmQ3OWFkYmM2OWUwNjIwODQ4NGFkMWI4MDExZGQ5ZTIyNzkyMmZiMDM2ZDcyYjRkM2M4NmQ0MTA" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/True-Wireless-Small-Banners.jpg?context=bWFzdGVyfGltYWdlc3w0NjcyOXxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDljLzk5MTM3NzcyNTg1MjYuanBnfGY3MDIxZDZlYTBhMjEwYjQ4NGIzMmQwZjdjMzQ2M2FhYzIwYWE0NGE4MzFmYjRlZjQwNzFlZjk2NWMwMzYxN2Y" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/Samsung-M13-5G-Great-Deals-Banner-22-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wzNDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNDgvaGY3Lzk5MjM5MDIzNDExNTAuanBnfDdiZjliNDZlOWUxZDFjZDQ2MDkzYjdjZDZhNDVlNWI0MGYwNTAwOWJkOWM4MWUzMTUyYmNmZmRmZjk3NjIwYjk" alt="Error"></div>
+        <div><img src="https://www.reliancedigital.in/medias/MackBook-Appliances-Small-banners.jpg?context=bWFzdGVyfGltYWdlc3w0Mjc0NXxpbWFnZS9qcGVnfGltYWdlcy9oNTYvaDkyLzk5MTkwODgzMjg3MzQuanBnfDcxYmMyMDMxMjdiMzUxYzE2NmJkYTU4ZDBlNTQxNjBkZWViYjQ1Mzc2Y2IyOWYwNTllODhkNmRlZjA0NjM3NmI" alt="Error"></div>
+    </div>
+
     <button id="btn">View All</button>
     <div id="footer">
       <div>
@@ -815,6 +862,10 @@
     let cart = document.getElementById("cartpage")
     cart.addEventListener("click",()=>{
         window.location.href="cart.html"
+    })
+    let logo = document.getElementById("logo")
+    logo.addEventListener("click",()=>{
+        window.location.href="index.html"
     })
     
     const swiper = new Swiper('.swiper', {
