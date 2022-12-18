@@ -200,7 +200,7 @@
         margin: auto;
         margin-top: 20px;
     }
-    #cart-cont div{
+    #cart-cont>div{
         width: 80%;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         margin-top: 10px;
@@ -217,6 +217,17 @@
         border-radius: 4px;
         padding: 3px;
     }
+    #cart-cont>div>div{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    #cart-cont>div>div button{
+        margin: 3px 40px;
+        width: 60%;
+       display: block;
+    }
+
 
     </style>
 </head>
@@ -416,6 +427,7 @@
     logo.addEventListener("click",()=>{
         window.location.href="index.html"
     })
+    
     let Cartcont = document.getElementById("cart-cont")
 
     let cartData = JSON.parse(localStorage.getItem("cart"))
@@ -435,19 +447,22 @@
             let name = document.createElement("h4")
             name.innerText= element.name;
             let price = document.createElement("p")
-            price.innerText = element.price;
+            price.innerText = "Price:"+element.price;
             let rating = document.createElement("p")
-            rating.innerText = element.rating;
+            rating.innerText = "Rating:"+element.rating;
+            let btnDiv = document.createElement("div")
             let buynow = document.createElement("button")
             buynow.innerText = "Buy Now";
             let Delete = document.createElement("button")
             Delete.innerText = "Remove From Cart"
             Delete.addEventListener("click",()=>{
+                Cartcont.innerHTML= null
                 cartData.splice(index,1)
                 localStorage.setItem("cart",JSON.stringify(cartData))
                 showData(cartData)
             })
-            card.append(img,name,price,rating,buynow,Delete)
+            btnDiv.append(buynow,Delete)
+            card.append(img,name,price,rating,btnDiv)
             Cartcont.append(card)
         });
     } 
